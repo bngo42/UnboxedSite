@@ -5,6 +5,11 @@
         <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
         <style>
+
+            .debug-red{border:1px solid red !important;}
+            .debug-blue{border:1px solid blue !important;}
+            .debug-green{border:1px solid green !important;}
+
             *{
                 margin:0;
                 padding:0;
@@ -26,6 +31,12 @@
             a, p, span, i, h1, h2, h3, h4, h5, ul, li{
                 color: white;
                 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                padding:0.5em;
+            }
+
+            img{
+                vertical-align: middle;
+                text-align: center;
             }
 
             body{
@@ -33,13 +44,15 @@
             }
 
             @media (min-width: 299px) {
+                .section{ padding: 1em; }                              
                 h1{ font-size: 1.4rem }
                 h2{ font-size: 1rem }
                 h3, p, span{ font-size: 0.7rem }
                 h5, h4{ font-size: 0.4rem }
             }
 
-            @media (min-width: 959px) {                
+            @media (min-width: 959px) {  
+                .section{ padding: 2em; }              
                 h1{ font-size: 1.6rem }
                 h2{ font-size: 1.2rem }
                 h3, p, span{ font-size: 0.9rem }
@@ -84,7 +97,6 @@
 
             .section{
                 width: 100%;
-                padding: 2em;
                 height:100vh;
                 border:1px solid green;
             }
@@ -107,17 +119,15 @@
                     <img width="100%" src="img/logo.png"/>
                     <h2>AN ASYMMETRICAL VR GAME ABOUT BOXES</h2>
                 </div>
-                <a href="#section1" class=" column-content">
+                <a href="#footer" class=" column-content">
                     <span>see more</span>
                     <i class="fas fa-angle-down"></i>
                 </a>
             </div>
-            <div id="section1" class="section column-content center-content">
-                <span>Available soon on</span>
-                <div class="inline-content">
-                    <img src="img/itchio.png"/>
-                    <img src="img/game_jolt.png"/>
-                </div>
+            <div id="footer" class="section column-content center-content">
+                <h1>Available soon on</h1>
+                <a href="#footer"><img src="img/itchio.png"/></a>
+                <a href="#footer"><img src="img/game_jolt.png"/></a>
             </div> 
         </div>
     </body>
