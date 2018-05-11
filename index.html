@@ -120,6 +120,37 @@
                 align-items: center;
                 justify-content: center;
             }
+            
+            .cover-section{
+                width:100%;
+                height:400px;
+                display:flex;
+                justify-content: space-between;
+            }
+
+            .invert{
+                flex-direction: row-reverse;
+            }
+
+            .cover-section .media{
+                width:50%;
+                display: flex;
+                align-items: center;
+            }
+
+            .cover-section .media img{
+                width:100%;
+            }
+
+            .cover-section .caption{
+                width:50%;
+                display:flex;                
+                align-items: center;
+            }
+
+            .cover-section .caption .content{
+                text-align: right;
+            }
         </style>
     </head>
     <body>
@@ -133,6 +164,23 @@
                     <span>see more</span>
                     <i class="fas fa-angle-down"></i>
                 </a>
+            </div>
+            <div id="cover" class="section column-content center-content">
+                <div class="cover-section debug-red">
+                    <div class="media debug-blue">
+                        <img src="img/screenshot/screen.png"/>
+                    </div>
+                    <div class="caption debug-blue">
+                        <div class="content">
+                            <h2 class="title">My big title !</h2>
+                            <p>This is a little description. But it is another sentence.
+                                This is a little description. But it is another sentence.
+                                This is a little description. But it is another sentence.
+                                This is a little description. But it is another sentence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="screenshot" class="section column-content center-content">
                 <h1 class="uppercase">Screenshot</h1>  
@@ -150,8 +198,8 @@
             </div>
             <div id="footer" class="section column-content center-content">
                 <h1 class="uppercase">Available soon on</h1>
-                <a href="#footer"><img src="img/itchio.png"/></a>
-                <a href="#footer"><img src="img/game_jolt.png"/></a>
+                <a href="#"><img src="img/itchio.png"/></a>
+                <!-- <a href="#footer"><img src="img/game_jolt.png"/></a> -->
             </div> 
         </div>
     </body>
