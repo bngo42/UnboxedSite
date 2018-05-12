@@ -32,6 +32,16 @@ a, p, span, i, h1, h2, h3, h4, h5, ul, li{
     padding:0.5em;
 }
 
+a, p, span, i, h1, h2, h3, h4, h5, ul, li, img{
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+     -khtml-user-select: none;
+       -moz-user-select: none; 
+        -ms-user-select: none;
+            user-select: none; 
+}
+
 img{
     vertical-align: middle;
     text-align: center;
@@ -125,7 +135,7 @@ body{
 }
 
 .global{
-    max-width: 1200px;
+    max-width: 1500px;
     margin-left:auto;
     margin-right:auto;
     display:flex;
@@ -175,7 +185,7 @@ body{
 }
 
 .cover-section .media img{
-    width:100%;
+    width:80%;
 }
 
 .cover-section .caption{
