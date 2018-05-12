@@ -1,157 +1,11 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
     <head>
         <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
         <title>Unboxed: The Game</title>
-        <style>
-
-            .debug-red{border:1px solid red !important;}
-            .debug-blue{border:1px solid blue !important;}
-            .debug-green{border:1px solid green !important;}
-
-            *{
-                margin:0;
-                padding:0;
-            }
-
-            html{
-                scroll-behavior: smooth;
-            }
-
-            a{
-                text-decoration: none;
-                cursor:pointer;                   
-            }
-
-            ul{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            ul, li{
-                list-style: none;
-            }
-
-            a, p, span, i, h1, h2, h3, h4, h5, ul, li{
-                color: white;
-                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                padding:0.5em;
-            }
-
-            img{
-                vertical-align: middle;
-                text-align: center;
-            }
-
-            body{
-                background: url('img/cardboard_texture.png') repeat;
-            }
-
-            @media (min-width: 299px) {
-                .section{ padding: 1em; }                              
-                h1{ font-size: 2rem }
-                h2{ font-size: 1rem }
-                h3, p, span{ font-size: 0.7rem }
-                h5, h4{ font-size: 0.4rem }
-                #screenshot img { width: 100%; }
-            }
-
-            @media (min-width: 959px) {  
-                .section{ padding: 2em; }              
-                h1{ font-size: 3rem }
-                h2{ font-size: 2rem }
-                h3, p, span{ font-size: 1rem }
-                h5, h4{ font-size: 0.8rem }
-                #screenshot img { width: 250px; }
-                
-            } 
-
-            @media (min-width: 1199px) {               
-                h1{ font-size: 4rem }
-                h2{ font-size: 2rem }
-                h3, p, span{ font-size: 1rem }
-                h5, h4{ font-size: 0.5rem }
-            }
-
-            .uppercase{
-                text-transform: uppercase;
-            }
-
-            .lowercase{
-                text-transform: lowercase;
-            }
-
-            .global{
-                max-width: 1024px;
-                margin-left:auto;
-                margin-right:auto;
-                display:flex;
-                flex-wrap: wrap;
-            }
-
-            .inline-content{
-                display: flex;
-                flex-direction: row;
-            }
-
-            .column-content{
-                display: flex;
-                flex-direction: column;
-            }
-
-            .item-bottom{
-                align-self: flex-end;
-            }
-
-            .section{
-                width: 100%;
-                min-height:100vh;
-                border:1px solid green;
-            }
-
-            .center-content{
-                display: flex;
-                text-align:center;
-                margin-left:auto;
-                margin-right: auto;
-                align-items: center;
-                justify-content: center;
-            }
-            
-            .cover-section{
-                width:100%;
-                height:400px;
-                display:flex;
-                justify-content: space-between;
-            }
-
-            .invert{
-                flex-direction: row-reverse;
-            }
-
-            .cover-section .media{
-                width:50%;
-                display: flex;
-                align-items: center;
-            }
-
-            .cover-section .media img{
-                width:100%;
-            }
-
-            .cover-section .caption{
-                width:50%;
-                display:flex;                
-                align-items: center;
-            }
-
-            .cover-section .caption .content{
-                text-align: right;
-            }
-        </style>
     </head>
     <body>
         <div class="global">
@@ -166,11 +20,44 @@
                 </a>
             </div>
             <div id="cover" class="section column-content center-content">
-                <div class="cover-section debug-red">
-                    <div class="media debug-blue">
-                        <img src="img/screenshot/screen.png"/>
+                <div class="cover-section ">
+                    <div class="media">
+                        <img src="img/islands.png"/>
                     </div>
-                    <div class="caption debug-blue">
+                    <div class="caption">
+                        <div class="content">
+                            <h2 class="title">My big title !</h2>
+                            <p>This is a little description. But it is another sentence.
+                                This is a little description. But it is another sentence.
+                                This is a little description. But it is another sentence.
+                                This is a little description. But it is another sentence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cover-section invert ">
+                    <div class="media">
+                        <img src="img/terrain.png"/>
+                    </div>
+                    <div class="caption">
+                        <div class="content">
+                            <h2 class="title">My big title !</h2>
+                            <p>This is a little description. But it is another sentence.
+                                This is a little description. But it is another sentence.
+                                This is a little description. But it is another sentence.
+                                This is a little description. But it is another sentence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cover-section ">
+                    <div class="media">
+                        <img src="img/button.png"/>
+                    </div>
+                    <div class="caption">
                         <div class="content">
                             <h2 class="title">My big title !</h2>
                             <p>This is a little description. But it is another sentence.
@@ -183,24 +70,57 @@
                 </div>
             </div>
             <div id="screenshot" class="section column-content center-content">
-                <h1 class="uppercase">Screenshot</h1>  
+                <h1 class="uppercase">Screenshot</h1>
                 <ul>
-                    <li><a href="#"><img width="250px" src="img/screenshot/screen.png"/></a></li>
-                    <li><a href="#"><img width="250px" src="img/screenshot/screen.png"/></a></li>
-                    <li><a href="#"><img width="250px" src="img/screenshot/screen.png"/></a></li>
-                    <li><a href="#"><img width="250px" src="img/screenshot/screen.png"/></a></li>
-                    <li><a href="#"><img width="250px" src="img/screenshot/screen.png"/></a></li>
-                    <li><a href="#"><img width="250px" src="img/screenshot/screen.png"/></a></li>
-                    <li><a href="#"><img width="250px" src="img/screenshot/screen.png"/></a></li>
-                    <li><a href="#"><img width="250px" src="img/screenshot/screen.png"/></a></li>
-                    <li><a href="#"><img width="250px" src="img/screenshot/screen.png"/></a></li>
+                    <li><a class="lightbox-thumbnail" data-path="img/twitter_icon.png"><img width="250px" src="img/screenshot/screen.png"/></a></li>
+                    <li><a class="lightbox-thumbnail" data-path="img/facebook_icon.png"><img width="250px" src="img/screenshot/screen.png"/></a></li>
+                    <li><a class="lightbox-thumbnail" data-path="img/twitter_icon.png"><img width="250px" src="img/screenshot/screen.png"/></a></li>
+                    <li><a class="lightbox-thumbnail" data-path="img/logo.png"><img width="250px" src="img/screenshot/screen.png"/></a></li>
+                    <li><a class="lightbox-thumbnail" data-path="img/screenshot/screen.png"><img width="250px" src="img/screenshot/screen.png"/></a></li>
+                    <li><a class="lightbox-thumbnail" data-path="img/facebook_icon.png"><img width="250px" src="img/screenshot/screen.png"/></a></li>
+                    <li><a class="lightbox-thumbnail" data-path="img/logo.png"><img width="250px" src="img/screenshot/screen.png"/></a></li>
+                    <li><a class="lightbox-thumbnail" data-path="img/facebook_icon.png"><img width="250px" src="img/screenshot/screen.png"/></a></li>
+                    <li><a class="lightbox-thumbnail" data-path="img/twitter_icon.png"><img width="250px" src="img/screenshot/screen.png"/></a></li>
                 </ul>
             </div>
             <div id="footer" class="section column-content center-content">
                 <h1 class="uppercase">Available soon on</h1>
                 <a href="#"><img src="img/itchio.png"/></a>
                 <!-- <a href="#footer"><img src="img/game_jolt.png"/></a> -->
-            </div> 
+            </div>
+            <div id="social" class="section column-content center-content">
+                <h1>Follow us on our social media</h1>
+                <div class="inline-content center-content">
+                    <a target="_blank" href="https://twitter.com/UnboxedTheGame"><img height="80px" src="img/twitter_icon.png"/></a>
+                    <a target="_blank" href="https://www.facebook.com/Unboxed-586080495071964/"><img height="80px" src="img/facebook_icon.png"/></a>
+                </div>
+            </div>
+
         </div>
+        <div class="lightbox lightbox-hide center-content" style="position:fixed;width:100%; height: 100%; top:0;background-color: rgba(0,0,0,0.9);">
+            <div class="center-content" style="width:80%;margin: 0 auto">
+                <img class="lightbox-popup-img" style="max-width:80%" src="img/screenshot/screen.png" />
+            </div>
+        </div>
+        <script>
+
+            let lightbox = document.querySelector('.lightbox');
+            let thumbnails = document.querySelectorAll(".lightbox-thumbnail");
+            for (let i = 0; i < thumbnails.length; i++){
+                thumbnails[i].addEventListener("click", () => {
+                    let popup = document.querySelector(".lightbox-popup-img");
+                    popup.setAttribute("src", thumbnails[i].dataset.path);
+                    togglePopup();
+                });
+            }
+
+            lightbox.addEventListener('click', () => {
+                togglePopup();
+            });
+
+            function togglePopup(){
+                lightbox.classList.toggle("lightbox-hide");            
+            }  
+        </script>
     </body>
 </html>
