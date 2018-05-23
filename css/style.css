@@ -136,6 +136,7 @@ body{
 
 .global{
     max-width: 1500px;
+    left: -50%;
     margin-left:auto;
     margin-right:auto;
     display:flex;
@@ -159,6 +160,7 @@ body{
 .section{
     width: 100%;
     min-height:100vh;
+    border: 1px solid red;
 }
 
 .center-content{
@@ -201,4 +203,8 @@ body{
 .lightbox-hide {
     /* opacity: 0; */
     display: none;
+}
+
+.parallax{
+    position:absolute;
 }
