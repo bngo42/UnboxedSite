@@ -8,8 +8,8 @@
         <title>Unboxed: The Game</title>
     </head>
     <body>
-        <div data-speed="0.2" class="parallax-item" style="left:50%">
-            <div class="global" style="transform: translate(-50%, 0%)">
+        <div data-speed="0.3" class="parallax-item">
+            <div class="global">
                 <div class="section center-content column-content">
                     <div>
                         <img width="100%" src="img/logo.png"/>
@@ -92,7 +92,7 @@
                         <a target="_blank" href="https://www.facebook.com/Unboxed-586080495071964/"><img height="80px" src="img/facebook_icon.png"/></a>
                         <!-- <a target="_blank" href="https://unboxedtheblog.tumblr.com/"><img height="80px" src="img/tumblr_icon.png"/></a> -->
                     </div>
-                    <i>or follow our dev blog by clicking<a href="https://unboxedtheblog.tumblr.com/">here</a></i>
+                    <i>or follow the dev blog by clicking<a href="https://unboxedtheblog.tumblr.com/">here</a></i>
                 </div>
             </div>
         </div>
@@ -101,6 +101,40 @@
                 <img class="lightbox-popup-img" style="max-width:80%" src="img/screenshot/screen.png" />
             </div>
         </div>
+        <script>
+            let height = 0;
+            let maxHeight = getHeightCount();
+            let isScrolling = false;
+
+            document.addEventListener("scroll", () => {
+
+            });
+
+            document.addEventListener("wheel", event => {
+                if (event.wheelDeltaY > 0)
+                    height++;
+                else if (event.wheelDeltaY < 0)
+                    height--;
+                console.log(height);
+                height = clamp(height, 0, maxHeight);
+                scrollTo(0, window.innerHeight * height);
+            });
+
+
+            function getHeightCount(){
+                return (document.documentElement.scrollHeight / window.innerHeight);
+            }
+
+            function clamp(value, min, max){
+                if (value > max)
+                    return max;
+                else if (value < min)
+                    return min;
+                else
+                    return value;
+            }
+        
+        </script>
         <script src="js/parallax.js"></script>
         <script src="js/lightbox.js"></script>
     </body>

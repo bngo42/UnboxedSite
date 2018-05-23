@@ -49,6 +49,7 @@ img{
 
 body{
     background: url('../img/cardboard_texture.png') repeat;
+    overflow-y: hidden;
 }
 
 @media (min-width: 299px) {
@@ -136,7 +137,7 @@ body{
 
 .global{
     max-width: 1500px;
-    left: -50%;
+    /* left: -50%; */
     margin-left:auto;
     margin-right:auto;
     display:flex;
@@ -160,7 +161,6 @@ body{
 .section{
     width: 100%;
     min-height:100vh;
-    border: 1px solid red;
 }
 
 .center-content{
