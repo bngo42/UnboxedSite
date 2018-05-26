@@ -102,37 +102,56 @@
             </div>
         </div>
         <script>
+            let body = document.body;
+            let html = document.documentElement;
             let height = 0;
             let maxHeight = getHeightCount();
             let isScrolling = false;
 
+            scrollTo(0, window.innerHeight * height);            
+            console.log("section height:" + maxHeight);
             document.addEventListener("scroll", () => {
-
+                if ((window.scrollY == 0) || (window.scrollY == (window.innerHeight * height)) || (window.innerHeight + window.scrollY) >= getDocumentHeight()) {
+                    isScrolling = false;
+                  }
             });
 
             document.addEventListener("wheel", event => {
-                if (event.wheelDeltaY > 0)
-                    height++;
-                else if (event.wheelDeltaY < 0)
-                    height--;
-                console.log(height);
-                height = clamp(height, 0, maxHeight);
-                scrollTo(0, window.innerHeight * height);
+                if (!isScrolling){
+                    isScrolling = true;
+                    if (event.wheelDeltaY > 0 && (window.innerHeight + window.scrollY) < getDocumentHeight())
+                        height++;
+                    else if (event.wheelDeltaY < 0 && window.scrollY > 0)
+                        height--;
+                    height = clamp(height, 0, maxHeight);
+                    console.log("height:" + height + "innerheight:" + window.innerHeight);
+                    scrollTo(0, window.innerHeight * height);
+                }
             });
 
-
             function getHeightCount(){
-                return (document.documentElement.scrollHeight / window.innerHeight);
+                return (getDocumentHeight() / window.innerHeight);
+            }
+
+            function getScrollHeight(){
+                return document.body.scrollHeight;
+            }
+
+            function getDocumentHeight(){
+                return Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
             }
 
             function clamp(value, min, max){
-                if (value > max)
+                if (value >= max)
                     return max;
-                else if (value < min)
+                else if (value <= min)
                     return min;
                 else
                     return value;
             }
+        </script>
+        <script>
         
         </script>
         <script src="js/parallax.js"></script>
