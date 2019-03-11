@@ -1,160 +1,18 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
         <title>Unboxed: The Game</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">        
+        <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
     </head>
     <body>
-        <div data-speed="0.3" class="parallax-item">
-            <div class="global">
-                <div class="section center-content column-content">
-                    <div>
-                        <img width="100%" src="img/logo.png"/>
-                        <h2 class="uppercase">AN ASYMMETRICAL VR GAME ABOUT BOXES</h2>
-                    </div>
-                    <a href="#footer" class=" column-content">
-                        <span>see more</span>
-                        <i class="fas fa-angle-down"></i>
-                    </a>
-                </div>
-                <div id="cover" class="section column-content center-content">
-                    <div class="cover-section ">
-                        <div class="media">
-                            <img src="img/islands.png"/>
-                        </div>
-                        <div class="caption">
-                            <div class="content">
-                                <h2 class="title">My big title !</h2>
-                                <p>This is a little description. But it is another sentence.
-                                    This is a little description. But it is another sentence.
-                                    This is a little description. But it is another sentence.
-                                    This is a little description. But it is another sentence.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cover-section invert ">
-                        <div class="media">
-                            <img src="img/terrain.png"/>
-                        </div>
-                        <div class="caption">
-                            <div class="content">
-                                <h2 class="title">My big title !</h2>
-                                <p>This is a little description. But it is another sentence.
-                                    This is a little description. But it is another sentence.
-                                    This is a little description. But it is another sentence.
-                                    This is a little description. But it is another sentence.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cover-section ">
-                        <div class="media">
-                            <img src="img/button.png"/>
-                        </div>
-                        <div class="caption">
-                            <div class="content">
-                                <h2 class="title">My big title !</h2>
-                                <p>This is a little description. But it is another sentence.
-                                    This is a little description. But it is another sentence.
-                                    This is a little description. But it is another sentence.
-                                    This is a little description. But it is another sentence.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="screenshot" class="section column-content center-content">
-                    <h1 class="uppercase">Screenshot</h1>
-                    <ul>
-                        <li><a class="lightbox-thumbnail" data-path="img/screenshot/screen-1.png"><img width="250px" src="img/screenshot/screen-1.png"/></a></li>
-                        <li><a class="lightbox-thumbnail" data-path="img/screenshot/screen-2.png"><img width="250px" src="img/screenshot/screen-2.png"/></a></li>
-                        <li><a class="lightbox-thumbnail" data-path="img/screenshot/screen-3.png"><img width="250px" src="img/screenshot/screen-3.png"/></a></li>
-                        <li><a class="lightbox-thumbnail" data-path="img/screenshot/screen-4.png"><img width="250px" src="img/screenshot/screen-4.png"/></a></li>
-                        <li><a class="lightbox-thumbnail" data-path="img/screenshot/screen-5.png"><img width="250px" src="img/screenshot/screen-5.png"/></a></li>
-                        <li><a class="lightbox-thumbnail" data-path="img/screenshot/screen-6.png"><img width="250px" src="img/screenshot/screen-6.png"/></a></li>
-                        <li><a class="lightbox-thumbnail" data-path="img/screenshot/screen-7.png"><img width="250px" src="img/screenshot/screen-7.png"/></a></li>
-                    </ul>
-                </div>
-                <div id="footer" class="section column-content center-content">
-                    <h1 class="uppercase">Available soon on</h1>
-                    <a href="#"><img src="img/itchio.png"/></a>
-                </div>
-                <div id="social" class="section column-content center-content">
-                    <h1>Follow us on our social media</h1>
-                    <div class="inline-content center-content">
-                        <a target="_blank" href="https://twitter.com/UnboxedTheGame"><img height="80px" src="img/twitter_icon.png"/></a>
-                        <a target="_blank" href="https://www.facebook.com/Unboxed-586080495071964/"><img height="80px" src="img/facebook_icon.png"/></a>
-                        <!-- <a target="_blank" href="https://unboxedtheblog.tumblr.com/"><img height="80px" src="img/tumblr_icon.png"/></a> -->
-                    </div>
-                    <i>or follow the dev blog by clicking<a href="https://unboxedtheblog.tumblr.com/">here</a></i>
+        <div class="container center">
+            <div class="section">
+                <div class="block-center">
+                    <img src="img/logo.png"/>
+                    <center><small>best fucking vr game !</small></center>
                 </div>
             </div>
         </div>
-        <div class="lightbox lightbox-hide center-content" style="position:fixed;width:100%; height: 100%; top:0;background-color: rgba(0,0,0,0.9);">
-            <div class="center-content" style="width:80%;margin: 0 auto">
-                <img class="lightbox-popup-img" style="max-width:80%" src="img/screenshot/screen.png" />
-            </div>
-        </div>
-        <script>
-            let body = document.body;
-            let html = document.documentElement;
-            let height = 0;
-            let maxHeight = getHeightCount();
-            let isScrolling = false;
-
-            scrollTo(0, window.innerHeight * height);            
-            console.log("section height:" + maxHeight);
-            document.addEventListener("scroll", () => {
-                if ((window.scrollY == 0) || (window.scrollY == (window.innerHeight * height)) || (window.innerHeight + window.scrollY) >= getDocumentHeight()) {
-                    isScrolling = false;
-                  }
-            });
-
-            document.addEventListener("wheel", event => {
-                if (!isScrolling){
-                    isScrolling = true;
-                    if (event.wheelDeltaY > 0 && (window.innerHeight + window.scrollY) < getDocumentHeight())
-                        height++;
-                    else if (event.wheelDeltaY < 0 && window.scrollY > 0)
-                        height--;
-                    height = clamp(height, 0, maxHeight);
-                    console.log("height:" + height + "innerheight:" + window.innerHeight);
-                    scrollTo(0, window.innerHeight * height);
-                }
-            });
-
-            function getHeightCount(){
-                return (getDocumentHeight() / window.innerHeight);
-            }
-
-            function getScrollHeight(){
-                return document.body.scrollHeight;
-            }
-
-            function getDocumentHeight(){
-                return Math.max( body.scrollHeight, body.offsetHeight, 
-                       html.clientHeight, html.scrollHeight, html.offsetHeight );
-            }
-
-            function clamp(value, min, max){
-                if (value >= max)
-                    return max;
-                else if (value <= min)
-                    return min;
-                else
-                    return value;
-            }
-        </script>
-        <script>
-        
-        </script>
-        <script src="js/parallax.js"></script>
-        <script src="js/lightbox.js"></script>
     </body>
 </html>

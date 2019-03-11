@@ -1,210 +1,46 @@
-.debug-red{border:1px solid red !important;}
-.debug-blue{border:1px solid blue !important;}
-.debug-green{border:1px solid green !important;}
-
-*{
-    margin:0;
-    padding:0;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
-a{
-    text-decoration: none;
-    cursor:pointer;                   
-}
-
-ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-ul, li{
-    list-style: none;
-}
-
-a, p, span, i, h1, h2, h3, h4, h5, ul, li{
+html, body {
+    height: 100%;
+    margin: 0px;
+    font-family: 'Luckiest Guy', cursive;
     color: white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding:0.5em;
+    background-color: black;
+    letter-spacing: 1px;
 }
 
-a, p, span, i, h1, h2, h3, h4, h5, ul, li, img{
-
-    -webkit-touch-callout: none;
-    -webkit-user-select: none; 
-     -khtml-user-select: none;
-       -moz-user-select: none; 
-        -ms-user-select: none;
-            user-select: none; 
-}
-
-img{
-    vertical-align: middle;
-    text-align: center;
-}
-
-body{
-    background: url('../img/cardboard_texture.png') repeat;
-    /* overflow-y: hidden; */
-}
-
-@media (min-width: 299px) {
-    .section{ padding: 0; }                              
-    h1{ font-size: 2rem }
-    h2{ font-size: 1rem }
-    h3, p, span{ font-size: 0.7rem }
-    h5, h4{ font-size: 0.4rem }
-    #screenshot img { width: 100%; }
-
-    .cover-section {
-        flex-direction: column !important;
-        justify-content: center !important;
-    }
-
-    .cover-section .media{
-        width:100% !important;
-    }
-
-    .cover-section .caption{
-        width:100% !important;
-    }
-
-    .cover-section .caption .content, .invert{
-        text-align: center !important;
-    }
-
-    .invert .caption .content{
-        text-align: center !important;
-     }
-}
-
-@media (min-width: 810px) {  
-    .section{ padding: 2em; }              
-    h1{ font-size: 3rem }
-    h2{ font-size: 2rem }
-    h3, p, span{ font-size: 1rem }
-    h5, h4{ font-size: 0.8rem }
-    #screenshot img { width: 250px; }              
-    
-    .cover-section{
-        display: flex !important;
-        flex-direction: row !important;
-    }
-
-    .cover-section .media{
-        width:50% !important;
-    }
-
-    .cover-section .caption{
-        width:50% !important;
-    }
-
-    .cover-section .caption .content{
-        text-align: right !important;
-    }
-
-    .invert .caption .content{
-        text-align: left !important;
-    }
-} 
-
-@media (min-width: 1199px) {               
-    h1{ font-size: 4rem }
-    h2{ font-size: 2rem }
-    h3, p, span{ font-size: 1rem }
-    h5, h4{ font-size: 0.5rem }
-}
-
-.full-width{
-    width: 100% !important;
-}
-
-.full-height{
-    height: 100% !important;
-}
-
-.uppercase{
-    text-transform: uppercase;
-}
-
-.lowercase{
-    text-transform: lowercase;
-}
-
-.global{
-    max-width: 1500px;
-    /* left: -50%; */
-    margin-left:auto;
-    margin-right:auto;
-    display:flex;
-    flex-wrap: wrap;
-}
-
-.inline-content{
-    display: flex;
-    flex-direction: row;
-}
-
-.column-content{
-    display: flex;
-    flex-direction: column;
-}
-
-.item-bottom{
-    align-self: flex-end;
-}
-
-.section{
-    width: 100%;
-    min-height:100vh;
-}
-
-.center-content{
-    display: flex;
-    text-align:center;
-    margin-left:auto;
+.center {
+    margin-left: auto;
     margin-right: auto;
-    align-items: center;
-    justify-content: center;
 }
 
-.invert{
-    flex-direction: row-reverse !important;
+.container {
+    border:1px solid red;
+    height: 100%;
 }
 
-.cover-section{
-    margin: 2% 0;
+.section {
+    padding: 0.8em;
 }
 
-.cover-section .media{
-    width:50%;
-    display: flex;
-    align-items: center;
-}
-
-.cover-section .media img{
-    width:80%;
-}
-
-.cover-section .caption{
-    width:50%;
-    display:flex;                
-    align-items: center;
-}
-
-.cover-section .caption .content{
-    text-align: right;
-}
-
-.lightbox-hide {
-    /* opacity: 0; */
-    display: none;
-}
-
-.parallax{
+.block-center {
     position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 550px) {
+    .container {
+        max-width: 750px;
+    }    
+}
+
+@media (min-width: 960px) {
+    .container {
+        max-width: 1024px;
+    }
 }
