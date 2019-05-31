@@ -10,11 +10,40 @@ html, body {
 
 body {
     background-color: #563522;
+    color: white;
+    font-family: 'Londrina Solid', cursive;
 }
 
 .section {
     width: 100%;
 }
+
+.p-1 {padding: 1em;}
+.p-2 {padding: 2em;}
+.p-3 {padding: 3em;}
+.p-4 {padding: 4em;}
+.p-5 {padding: 5em;}
+
+.px-1 {padding: 0 1em;}
+.px-2 {padding: 0 2em;}
+.px-3 {padding: 0 3em;}
+.px-4 {padding: 0 4em;}
+.px-5 {padding: 0 5em;}
+
+.py-1 {padding: 1em 0;}
+.py-2 {padding: 2em 0;}
+.py-3 {padding: 3em 0;}
+.py-4 {padding: 4em 0;}
+.py-5 {padding: 5em 0;}
+
+.title.big { font-size: 4.5em; }
+.title.medium { font-size: 3.2em; }
+.title.normal { font-size: 2em; }
+.title.small { font-size: 1.8em; }
+
+.align-left { text-align: left !important; }
+.align-right { text-align: right !important; }
+.align-center { text-align: center !important; }
 
 .header {
     background-color: #71b9cf;
@@ -29,7 +58,22 @@ body {
 .header .screen {
     max-width: 800px;
     height: auto;
+    background-color: #71b9cf;
+}
 
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+.content .center-content {
+    width: 1024px;
+    padding: 5em 0.5em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
