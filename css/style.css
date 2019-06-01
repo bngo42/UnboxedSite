@@ -18,6 +18,15 @@ body {
     width: 100%;
 }
 
+a {
+    color: orange;
+    text-decoration: none;
+}
+
+a:hover {
+    color:white;
+}
+
 .bd-1-red { border: 1px solid red}
 .bd-10-red { border: 10px solid red}
 
