@@ -18,6 +18,18 @@ body {
     width: 100%;
 }
 
+.bd-1-red { border: 1px solid red}
+.bd-10-red { border: 10px solid red}
+
+.bd-1-blue { border: 1px solid blue}
+.bd-10-blue { border: 10px solid blue}
+
+.bd-1-yellow { border: 1px solid yellow}
+.bd-10-yellow { border: 10px solid yellow}
+
+.bd-1-green { border: 1px solid green}
+.bd-10-green { border: 10px solid green}
+
 .p-1 {padding: 1em;}
 .p-2 {padding: 2em;}
 .p-3 {padding: 3em;}
@@ -36,14 +48,32 @@ body {
 .py-4 {padding: 4em 0;}
 .py-5 {padding: 5em 0;}
 
+.m-1 {margin: 1em;}
+.m-2 {margin: 2em;}
+.m-3 {margin: 3em;}
+.m-4 {margin: 4em;}
+.m-5 {margin: 5em;}
+
+.mx-1 {margin: 0 1em;}
+.mx-2 {margin: 0 2em;}
+.mx-3 {margin: 0 3em;}
+.mx-4 {margin: 0 4em;}
+.mx-5 {margin: 0 5em;}
+
+.my-1 {margin: 1em 0;}
+.my-2 {margin: 2em 0;}
+.my-3 {margin: 3em 0;}
+.my-4 {margin: 4em 0;}
+.my-5 {margin: 5em 0;}
+
 .title.big { font-size: 4.5em; }
 .title.medium { font-size: 3.2em; }
 .title.normal { font-size: 2em; }
 .title.small { font-size: 1.8em; }
 
-.align-left { text-align: left !important; }
-.align-right { text-align: right !important; }
-.align-center { text-align: center !important; }
+.align-left { text-align: left; }
+.align-right { text-align: right; }
+.align-center { text-align: center; }
 
 .header {
     background-color: #71b9cf;
@@ -59,6 +89,7 @@ body {
     max-width: 800px;
     height: auto;
     background-color: #71b9cf;
+    animation: float 6s ease-in-out infinite;
 }
 
 
@@ -67,20 +98,52 @@ body {
     width: 100%;
     height: 500px;
     display: flex;
+    flex-direction: column;
 }
 
 .content .center-content {
-    width: 1024px;
+    max-width: 1200px;
     padding: 5em 0.5em;
     margin-left: auto;
     margin-right: auto;
 }
 
-
-@media (min-width: 550px) {
-   
+.media-block {
+    width: 100%;
+    height: 300px;
+    margin: 0.8em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(255,255,255, 0.05);
 }
 
-@media (min-width: 1024px) {
+.media-block.inverted {
+    flex-direction: row-reverse;
+}
 
+.media-block .content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.media-block .img {
+    height: 100%;
+    max-width: 50%;
+    padding: 1em;
+    text-align: center;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
