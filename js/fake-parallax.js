@@ -1,9 +1,6 @@
 let bg = document.querySelector('.download .window .background');
 
-let h = document.documentElement, 
-    b = document.body,
-    st = 'scrollTop',
-    sh = 'scrollHeight';
+let h,b,st,sh;
 
 let update = () => {
     let bounds = bg.getBoundingClientRect();
@@ -14,5 +11,10 @@ let update = () => {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+
+    h = document.documentElement, 
+    b = document.body,
+    st = 'scrollTop',
+    sh = 'scrollHeight';
     window.addEventListener('scroll', update);
 });
