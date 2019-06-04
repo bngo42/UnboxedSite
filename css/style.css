@@ -11,7 +11,7 @@ html, body {
 body {
     background-color: #563522;
     color: #dadada;
-    font-family: 'Londrina Solid', cursive;
+    font-family: 'Londrina Solid', Arial, Helvetica, sans-serif;
 }
 
 .section {
@@ -103,7 +103,6 @@ a:hover {
     animation: float 3s ease-in-out infinite;
 }
 
-
 .content {
     position: relative;
     width: 100%;
@@ -133,19 +132,20 @@ a:hover {
     flex-direction: row-reverse;
 }
 
-.media-block .content {
+.media-block .media-content {
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.media-block .img {
+.media-block .media-block-img {
     max-height: 100%;
+    width: 40%;
     padding: 1em;
     text-align: center;
 }
 
-.media-block .img img {
+.media-block .media-block-img img {
     height: 100%;
 }
 

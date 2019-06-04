@@ -2,8 +2,8 @@
 <html>
     <head>
         <title>Unboxed: The Game</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">        
         <link href="https://fonts.googleapis.com/css?family=Londrina+Solid&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">        
     </head>
     <body>
         <div class="section header">
@@ -37,8 +37,9 @@
 
                 <section id="desc-blocks">
                     <div class="my-5">
+                        
                         <div class="media-block">
-                            <div class="content p-1">
+                            <div class="media-content p-1">
                                 <h1 class="title normal py-1">Lorem ipsum dolor sit amet</h1>
                                 <p class="text-content">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -46,13 +47,12 @@
                                     Quisque sed sapien elementum, varius eros sed, efficitur quam.
                                 </p>
                             </div>
-                            <div class="img">
+                            <div class="media-block-img">
                                 <img src="img/vr_headset.png"/>
                             </div>
                         </div>
-                        
                         <div class="media-block inverted">
-                            <div class="content p-1">
+                            <div class="media-content p-1">
                                 <h1 class="title normal py-1">Lorem ipsum dolor sit amet</h1>
                                 <p class="text-content">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -60,24 +60,24 @@
                                     Quisque sed sapien elementum, varius eros sed, efficitur quam.
                                 </p>
                             </div>
-                            <div class="img">
+                            <div class="media-block-img">
+                                <img src="img/vr_headset.png"/>
+                            </div>
+                        </div>
+                        <div class="media-block">
+                            <div class="media-content p-1">
+                                <h1 class="title normal py-1">Lorem ipsum dolor sit amet</h1>
+                                <p class="text-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Curabitur elementum sodales risus, eu vulputate sapien suscipit vel.
+                                    Quisque sed sapien elementum, varius eros sed, efficitur quam.
+                                </p>
+                            </div>
+                            <div class="media-block-img">
                                 <img src="img/vr_headset.png"/>
                             </div>
                         </div>
 
-                        <div class="media-block">
-                            <div class="content p-1">
-                                <h1 class="title normal py-1">Lorem ipsum dolor sit amet</h1>
-                                <p class="text-content">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Curabitur elementum sodales risus, eu vulputate sapien suscipit vel.
-                                    Quisque sed sapien elementum, varius eros sed, efficitur quam.
-                                </p>
-                            </div>
-                            <div class="img">
-                                <img src="img/vr_headset.png"/>
-                            </div>
-                        </div>
                     </div>
                 </section>
 
@@ -154,39 +154,6 @@
                 </section>
             </div>
         </div>
-
-
-        <script>
-            let screens = document.querySelectorAll('.screenshots-grid .img img');
-            let lightbox = document.querySelector('.lightbox');
-            let img = lightbox.querySelector('img');
-            let isVisible = false;
-
-            screens.forEach(el => {
-                el.addEventListener('click', () => {
-                    showLightbox(el.src);
-                });
-            });
-
-            lightbox.addEventListener('click', () => {
-                hideLightbox();
-            });
-
-
-            function showLightbox(path) {
-                if (!isVisible) {
-                        isVisible = true;
-                img.src = path;
-                lightbox.classList.add('show');
-                }
-            }
-
-            function hideLightbox() {
-                if (isVisible) {
-                    lightbox.classList.remove('show');
-                    isVisible = false;
-                }
-            }
-        </script>
+        <script src="js/gallery.js"></script>
     </body>
 </html>
