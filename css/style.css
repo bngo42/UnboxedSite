@@ -100,7 +100,7 @@ a:hover {
     max-width: 800px;
     height: auto;
     background-color: #71b9cf;
-    animation: float 3s ease-in-out infinite;
+    animation: float 5s ease-in-out infinite;
 }
 
 .content {
