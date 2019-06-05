@@ -7,7 +7,7 @@ let update = () => {
     let elemPer = (bounds.bottom) /  h.clientHeight * 100;
     let percent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
     let translate = percent - elemPer;
-    bg.style.transform = `translate(0,${translate * 0.5}%)`;
+    bg.style.transform = `translate(0,${translate * 0.3}%)`;
 }
 
 document.addEventListener("DOMContentLoaded", () => {

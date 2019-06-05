@@ -2,6 +2,13 @@ let localtags = [];
 let locales = {};
 let tags;
 
+let switchers = document.querySelectorAll('.navbar .langage-picker a');
+switchers.forEach(el => {
+    el.addEventListener('click', e => {
+        e.preventDefault();
+        updateDictionnary(el.dataset.langage);
+    });
+});
 
 document.addEventListener("DOMContentLoaded", () => {
     tags = document.querySelectorAll('h1, p, a');
@@ -10,11 +17,14 @@ document.addEventListener("DOMContentLoaded", () => {
             localtags.push(el);
         }
     });
-    updateDictionnary();
+    updateDictionnary('en-US');
 });
 
-function updateDictionnary() {
-    fetch('https://bngo42.github.io/UnboxedSite/js/local/fr-FR.json')
+function updateDictionnary(langage) {
+    if (!langage){
+        return ;
+    }
+    fetch(`https://bngo42.github.io/UnboxedSite/js/local/${langage}.json`)
     .then(res => res.text())
     .then(text => {
         let json = JSON.parse(text);
