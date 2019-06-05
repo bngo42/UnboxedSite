@@ -14,9 +14,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function updateDictionnary() {
-    fetch('/js/local/en-US.json')
-    .then(r => r.text())
-    .then(t => console.log(t))
+    fetch('https://bngo42.github.io/UnboxedSite/js/local/en-US.json')
+    .then(res => res.text())
+    .then(text => {
+        let json = JSON.parse(text);
+        locales = json.localization;
+        console.log(locales);
+    });
 }
 
 function updateText(){

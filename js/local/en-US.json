@@ -1,36 +1,24 @@
 {
     "localization": [
       {
-        "key": "",
-        "value": ""
+        "key": "title-header",
+        "value": "Welcome to Unboxed !"
       },
       {
-        "key": "",
-        "value": ""
+        "key": "title-screenshots",
+        "value": "Screenshots"
       },
       {
-        "key": "",
-        "value": ""
+        "key": "title-download",
+        "value": "Download"
       },
       {
-        "key": "",
-        "value": ""
+        "key": "title-socials",
+        "value": "Socials"
       },
       {
-        "key": "",
-        "value": ""
-      },
-      {
-        "key": "",
-        "value": ""
-      },
-      {
-        "key": "",
-        "value": ""
-      },
-      {
-        "key": "",
-        "value": ""
+        "key": "follow-twitter",
+        "value": "Follow me on Twitter"
       }
     ]
   }
