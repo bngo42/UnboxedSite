@@ -151,16 +151,6 @@
                     </div>
                 </section>
 
-                <section id="socials">
-                    <h1 class="title big align-center">Socials</h1>
-                    <div class="socials-feed py-2">
-                        <div class="twitter-feed">
-                            <a class="twitter-timeline" data-width="300" data-height="500" href="https://twitter.com/UnboxedTheGame?ref_src=twsrc%5Etfw"></a>
-                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-                        </div>
-                    </div>
-                </section>
-
                 <section id="footer">
                     <div class="footer">
                         <div class="content">

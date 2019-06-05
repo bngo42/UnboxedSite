@@ -238,14 +238,6 @@ a:hover {
     flex-direction: column;
 }
 
-.socials-feed {
-    max-width: 100%;
-    display:flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 .footer {
     position: absolute;
     left: 0;
