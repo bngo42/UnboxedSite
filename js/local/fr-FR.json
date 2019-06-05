@@ -1,0 +1,24 @@
+{
+    "localization": [
+      {
+        "key": "title-header",
+        "value": "Bienvenue sur Unboxed !"
+      },
+      {
+        "key": "title-screenshots",
+        "value": "Gallerie"
+      },
+      {
+        "key": "title-download",
+        "value": "Téléchargement"
+      },
+      {
+        "key": "title-socials",
+        "value": "Réseaux sociaux"
+      },
+      {
+        "key": "follow-twitter",
+        "value": "Suivez moi sur Twitter"
+      }
+    ]
+  }

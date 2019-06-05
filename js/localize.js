@@ -1,16 +1,16 @@
 let localtags = [];
 let locales = {};
+let tags;
 
-updateDictionnary();
+
 document.addEventListener("DOMContentLoaded", () => {
-    let tags = document.querySelectorAll('h1, p, a');
+    tags = document.querySelectorAll('h1, p, a');
     tags.forEach(el => {
         if (el.dataset.localKey) {
             localtags.push(el);
         }
     });
-    // updateText();
-    console.log(tags, localtags);
+    updateDictionnary();
 });
 
 function updateDictionnary() {
@@ -20,13 +20,28 @@ function updateDictionnary() {
         let json = JSON.parse(text);
         locales = json.localization;
         console.log(locales);
-    });
+    })
+    .then(updateText);
 }
 
 function updateText(){
     localtags.forEach(el => {
         if (el.dataset.localKey){
-            el.innerHTML = "Hello World !!!";
+            getTranslation(el.dataset.localKey)
+            .then(res => el.innerHTML = res)
+            .catch(console.error);
         }
+    });
+}
+
+
+function getTranslation(key){
+    return new Promise((resolve, reject) => {
+        locales.forEach(el => {
+            if (el.key == key){
+                resolve(el.value);
+            }
+        });
+        reject("value not found");
     });
 }
