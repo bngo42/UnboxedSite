@@ -14,14 +14,17 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function updateDictionnary() {
-    fetch('https://bngo42.github.io/UnboxedSite/js/local/en-US.json')
+    fetch('https://bngo42.github.io/UnboxedSite/js/local/fr-FR.json')
     .then(res => res.text())
     .then(text => {
         let json = JSON.parse(text);
         locales = json.localization;
         console.log(locales);
     })
-    .then(updateText);
+    .then(updateText)
+    .catch(() => {
+        console.error('could not fetch data');
+    });
 }
 
 function updateText(){
