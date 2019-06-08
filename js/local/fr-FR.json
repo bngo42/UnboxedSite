@@ -5,6 +5,38 @@
         "value": "Bienvenue sur Unboxed !"
       },
       {
+        "key": "title-block-1",
+        "value": "Jusqu'a cinq joueurs"
+      },
+      {
+        "key": "content-block-1",
+        "value":  "Lorem ipsum 1 dolor sit amet, consectetur adipiscing elit.
+                  Curabitur elementum sodales risus, eu vulputate sapien suscipit vel.
+                  Quisque sed sapien elementum, varius eros sed, efficitur quam."
+      },
+      
+      {
+        "key": "title-block-2",
+        "value": "Des pouvoirs très rigolo !"
+      },
+      {
+        "key": "content-block-2",
+        "value":  "Lorem ipsum 2 dolor sit amet, consectetur adipiscing elit.
+                  Curabitur elementum sodales risus, eu vulputate sapien suscipit vel.
+                  Quisque sed sapien elementum, varius eros sed, efficitur quam."
+      },
+      
+      {
+        "key": "title-block-3",
+        "value": "Une immersion total ! (C'est faux.)"
+      },
+      {
+        "key": "content-block-3",
+        "value":  "Lorem ipsum 3 dolor sit amet, consectetur adipiscing elit.
+                  Curabitur elementum sodales risus, eu vulputate sapien suscipit vel.
+                  Quisque sed sapien elementum, varius eros sed, efficitur quam."
+      },
+      {
         "key": "title-screenshots",
         "value": "Images"
       },
