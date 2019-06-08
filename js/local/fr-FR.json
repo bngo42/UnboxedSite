@@ -10,31 +10,23 @@
       },
       {
         "key": "content-block-1",
-        "value":  "Lorem ipsum 1 dolor sit amet, consectetur adipiscing elit.
-                  Curabitur elementum sodales risus, eu vulputate sapien suscipit vel.
-                  Quisque sed sapien elementum, varius eros sed, efficitur quam."
+        "value":  "contenu bloc 1"
       },
-      
       {
         "key": "title-block-2",
         "value": "Des pouvoirs très rigolo !"
       },
       {
         "key": "content-block-2",
-        "value":  "Lorem ipsum 2 dolor sit amet, consectetur adipiscing elit.
-                  Curabitur elementum sodales risus, eu vulputate sapien suscipit vel.
-                  Quisque sed sapien elementum, varius eros sed, efficitur quam."
+        "value":  "contenu bloc 2"
       },
-      
       {
         "key": "title-block-3",
         "value": "Une immersion total ! (C'est faux.)"
       },
       {
         "key": "content-block-3",
-        "value":  "Lorem ipsum 3 dolor sit amet, consectetur adipiscing elit.
-                  Curabitur elementum sodales risus, eu vulputate sapien suscipit vel.
-                  Quisque sed sapien elementum, varius eros sed, efficitur quam."
+        "value":  "contenu bloc 3"
       },
       {
         "key": "title-screenshots",
